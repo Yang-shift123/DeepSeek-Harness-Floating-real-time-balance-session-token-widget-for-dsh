@@ -1,0 +1,8 @@
+# Bundle patch for dsh-account-usage-widget.
+#
+# The bundle is a single Loader row: the Host half is inert, and the browser
+# half (declared by package.json `dsh.client`) renders the widget into the
+# frame-wide `shell.overlay` slot.
+- insert:
+    - id: account-usage-widget
+      name: 'dsh-account-usage-widget'

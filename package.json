@@ -1,0 +1,62 @@
+{
+  "name": "dsh-account-usage-widget",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Real-time account usage widget for the DeepSeek Harness Web UI: live balance, bonus credit and main-session token usage in a floating pill, themed to the host.",
+  "license": "MIT",
+  "author": "Yang-shift123",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "bundle",
+    "usage",
+    "balance",
+    "widget"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yang-shift123/DeepSeek-Harness-Floating-real-time-balance-session-token-widget-for-dsh.git"
+  },
+  "homepage": "https://github.com/Yang-shift123/DeepSeek-Harness-Floating-real-time-balance-session-token-widget-for-dsh#readme",
+  "bugs": {
+    "url": "https://github.com/Yang-shift123/DeepSeek-Harness-Floating-real-time-balance-session-token-widget-for-dsh/issues"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-api-remotes"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-api-account-controller": "^0.2.0-rc.2",
+    "@deepseek-ai/dsh-client-locale": "^0.2.0-rc.2",
+    "@deepseek-ai/dsh-client-ui-layout": "^0.2.0-rc.2",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.2.0-rc.2"
+  }
+}

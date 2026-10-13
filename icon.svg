@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Account usage">
+  <defs>
+    <linearGradient id="auw-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4d6bfe"/>
+      <stop offset="1" stop-color="#2a43c9"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="2.5" width="29" height="27" rx="7" fill="url(#auw-bg)"/>
+  <path d="M8 13.6c0-1.4 1.15-2.6 2.6-2.6h10.2c1.4 0 2.6 1.15 2.6 2.6v.9H10.6c-1.4 0-2.6 1.15-2.6 2.6v5.2c0 1.4 1.15 2.6 2.6 2.6h12.2c1.4 0 2.6-1.15 2.6-2.6v-4.9c0-1.4-1.15-2.6-2.6-2.6H10.6"
+        fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="21.3" cy="19.4" r="1.9" fill="#ffffff"/>
+  <path d="M9.4 8.6h9.4" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" opacity=".75"/>
+</svg>
